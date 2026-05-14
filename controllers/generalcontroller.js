@@ -79,6 +79,14 @@ const getdelete = (req, res) => {
     }
 }
 
+const get404 = (req, res) => {
+    try{
+        res.render("404")
+    }catch (error){
+        res.render("404")
+    }
+}
+
 const createContact = (req, res) => {
     try {
         res.render("contact")
@@ -115,5 +123,6 @@ module.exports = {
     getTestimonial,
     createContact,
     getmessage,
-    getdelete
+    getdelete,
+    get404
 }

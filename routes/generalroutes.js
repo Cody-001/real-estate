@@ -10,10 +10,12 @@ const {
     getTestimonial,
     createContact,
     getmessage,
-    getdelete
+    getdelete,
+    get404
 } = require("../controllers/generalcontroller")
 
 router.get('/', getHome)
+router.get("/404", get404)
 router.get('/about', getAbout)
 router.get('/contact', getContact)
 router.get('/properties', getproperty)
