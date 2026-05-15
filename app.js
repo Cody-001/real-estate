@@ -8,11 +8,11 @@ const generalrouter = require ("./routes/generalroutes")
 
 const url = process.env.MONGO
 
-mongoose.connect (url).then(()=>{
-    console.log("database connected successfully")
-}).catch(()=>{
-    console.log("fail to connect to database")
-}) 
+// mongoose.connect (url).then(()=>{
+//     console.log("database connected successfully")
+// }).catch(()=>{
+//     console.log("fail to connect to database")
+// }) 
 
 app.engine ("hbs", exphbs.engine({
     extname: ".hbs",
